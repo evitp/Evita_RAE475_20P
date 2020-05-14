@@ -6,7 +6,7 @@
         conn, addr = serv.accept()
         from_client = ''
         while True:
-            data = conn.recv(4096)
+            data = conn.recv(3333)
             if not data: break
             from_client += data
             print from_client
