@@ -1,0 +1,16 @@
+For this part of assignment I used the following commands in two different terminals, one for Server - Apache, and the other one for Client - Curl.
+Results are shown in PNG file attached to Evita_RAE475_20P repositorie.
+
+SERVER SIDE
+
+sudo apt update
+sudo apt install apache2
+sudo ufw app list
+sudo ufw allow 'Apache'
+sudo ufw status
+sudo systemctl status apache2
+
+CLIENT SIDE
+
+sudo apt install curl
+curl -I localhost
