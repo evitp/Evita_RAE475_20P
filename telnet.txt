@@ -1,0 +1,11 @@
+To send a message from the client to the server via telnet connection I used Linux command NC.
+
+SERVER SIDE
+
+Firstly, I checked server IP typing in command "ifconfig" which is 10.0.2.15.
+Then I used the following command: "nc -lk 10.0.2.15 3333", where "-lk" stands for listening permanently (until connection is disabled), additionally, I chose a random port - 3333.
+
+CLIENT SIDE
+
+Knowing servers IP address and chosen port nr., I used "telnet 10.0.2.15 3333" command to connect to the server.
+When the connection was established, I could type in any text and it would be sent and displayed on servers side.
