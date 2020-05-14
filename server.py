@@ -10,6 +10,6 @@
             if not data: break
             from_client += data
             print from_client
-            conn.send("I am Evitas created SERVER<br>")
+            conn.send("I am Evitas SERVER<br>")
         conn.close()
         print 'client disconnected'
